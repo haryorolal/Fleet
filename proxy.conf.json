@@ -1,0 +1,8 @@
+{
+    "/api": {
+      "target": "https://www.eazydesing.snowflakesafrostore.com",
+      "secure": true,      
+      "changeOrigin": true,
+      "logLevel": "debug"
+    }
+}

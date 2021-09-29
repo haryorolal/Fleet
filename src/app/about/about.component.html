@@ -1,0 +1,65 @@
+<main>
+                <article class="nav-back">
+                                <div style="background-color: green;">
+                                        <mat-card class="backdiv">
+                                                <h1 style="text-align: center;"><b>About Us - We will serve you better</b></h1>
+                                                
+                                        </mat-card>
+                                </div>
+                </article>
+
+        <article class="container margintop">
+                <mat-card>
+                        <div>
+                                <p>OvitFleet Services (OS), is the fastest growing, full-service Ground Support Equipment (GSE) and truck repair facility. 
+                                        With a managing team of over 20 years’ experience, our certified technicians can customize solutions for your company’s goals.</p>      
+                                ​
+                                <p>Due to high demand for GSE fleet maintenance and technical support, we’ve striven to become the trusted partner our customers can 
+                                        depend on.  Founded in 2015, we’re proud of many accomplishments</p>
+                                
+                               <p> Recognized by The National Minority Supplier Development Council as the only GSE certified Minority Business Enterprise fleet maintenance company in the U.S.
+                                Our Services is granted full security clearance with permits to access on-site airfield service and towing of equipment. </p>
+                                                  
+                               <p>
+                                    We are a certified contractor for large Ground Support Equipment manufacturer assisting with warranty repairs as well 
+                                    as decommissioning and commissioning of all related equipment.                        
+                                    Our client base includes established relationships with major corporations, manufacturers, and renowned airlines.
+                               </p>
+                                
+                               <p>
+                                    Long standing relationship with customers who have referred business to us.                            
+                                    Fleet Services LLC, has expanded from a one-man mobile operation to an 20000 Sq. feet service facility, 
+                                    including an additional 25000 Sq. feet of secure gated parking and 3 service vehicles.
+                                    
+                                    Our dedicated service team has grown from one to more than a dozen dependable employees.                                 
+                                    Over the years we have traveled to multiple airports for onsite technical support and maintenance.</p>
+                                  <p><i>Our Field of Vision includes providing zero-time Ground Support Equipment refurbishment, supporting the green movement, 
+                                        and continuing to diversify our fleet services offered to municipalities, small businesses, and corporations.</i>
+                               </p>
+                                
+                        </div>
+                </mat-card>
+        </article>
+
+        <article style="background-color:  rgb(161, 77, 77); height: 150px;" class="margin-top" >
+        <p class="container subscribe" > ASK FLEET MANAGEMENT INSIGHTS FOR MORE </p>
+    </article>
+
+        <article class="container margintop">
+                <div style="text-align: center"><h1>Other Services</h1></div>
+                <div fxLayout="row wrap" fxLayoutGap="16px grid">
+                    <div fxFlex="50%" fxFlex.xs="100%" *ngFor="let com of comments">
+                        <mat-card class="card-shadow">
+                            <mat-card-header>
+                                <mat-card-title><h1>{{com.title}}</h1></mat-card-title>
+                            </mat-card-header>
+                            <mat-card-content>                    
+                            <p>{{com.content}}</p>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+        
+                </div>
+        
+            </article>
+</main>

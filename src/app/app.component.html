@@ -1,0 +1,33 @@
+<section >
+    <div style="width: 100%">
+        <div class="side-left"><span class="topspan"><mat-icon>call</mat-icon> (786) 567-6482</span>
+          <span>&nbsp;&nbsp;</span>
+          <span class="topspan"><mat-icon>mail</mat-icon>info@ovitfleet.com</span>
+        </div>
+        <div class="side-right">
+            <span>(WhatsApp Only)<mat-icon>chat</mat-icon> (786) 496-3994</span>
+        </div>
+      </div>
+    <mat-toolbar color='primary' fxLayoutGap='8px' class="app-toolbar fixed-top" [class.app-is-mobile]='media.isActive("xs")'>
+      <!--<mat-icon  mat-icon-button (click)='sidenav.toggle()' style="color: black ">menu</mat-icon>-->
+      <span style="font-size: 20px; color: black" routerLink='/home'>OvitFleet</span>
+      <span class="flex-spacer"></span>
+      <ul>
+        <li><a [routerLink]="['home']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a></li>
+        <li><a [routerLink]="['aboutUs']" routerLinkActive="active">About</a></li>
+        <li><a [routerLink]="['vacancy-home/vacanthome']" routerLinkActive="active">Vacancy</a></li>
+        <li><a [routerLink]="['contact']" routerLinkActive="active">Contact</a></li>
+      </ul>
+  
+      <!--<span class="flex-spacer"></span>
+      <button mat-mini-fab routerLink="/user/viewUser" *ngIf='displayAccountIcons' matTooltip="Profile" aria-label="Profile"><mat-icon style="color: black !important">account_circle</mat-icon></button>
+      <button mat-mini-fab routerLink="/user/logout" *ngIf='displayAccountIcons' matTooltip="Logout" arial-label="Logout"><mat-icon style="color: black !important">lock_open</mat-icon></button>
+    -->
+    </mat-toolbar>
+
+    <article class="app-sidenav-container" >
+           <router-outlet></router-outlet>
+           <app-footer ></app-footer>   
+    </article>
+
+</section>

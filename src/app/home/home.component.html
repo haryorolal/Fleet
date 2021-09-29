@@ -1,0 +1,96 @@
+<main >
+    <article class="nav-back">
+        <div style="background-color: green;">
+                <mat-card class="backdiv">
+                        <h1 style="text-align: center;"><b>INDUSTRY-LEADING FLEET SERVICES MADE SIMPLE</b></h1>
+                        <p>Every fleet is unique – from size, to makes and models, to driver needs and specific applications. 
+                        Luckily, our process for optimizing fleets is refreshingly straightforward.
+                        OvitFleet Management will create and manage a customized, 
+                         complete fleet management program, enabling your team to focus on other tasks (like serving customers).</p>                
+                         
+                        
+                        <p>But we won’t stop there. At every turn, we’ll evaluate fleet performance and identify
+                         opportunities for continuous improvement and efficiency. Our discipline will ensure 
+                         you get the most out of your investment in your vehicles – and your partnership with us.</p>
+                </mat-card>
+        </div>
+    </article>
+
+    <article class="container margin-top">
+        <mat-accordion>
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>CUSTOMIZED PLAN </mat-panel-title>
+                    <mat-panel-description><p  style="color:  rgb(161, 77, 77)">WE’LL BUILD A PLAN TOGETHER </p></mat-panel-description>
+                  </mat-expansion-panel-header>
+                  <b>WE’LL BUILD A PLAN TOGETHER</b>
+                       <p> Meet your dedicated Client Strategy Manager. They have deep industry knowledge and experience 
+                        from managing thousands of vehicles through Enterprise rental branches. They also understand 
+                        the ways that vehicle needs and pricing change by season in your industry and area.</p>
+
+                        <p>Using our innovative tools and resources, they'll work hand-in-hand with you to analyze your
+                         current fleet, identify immediate opportunities for savings and craft a comprehensive plan for
+                          the year ahead, including which vehicle makes and models meet your objective, as well as
+                           the best time to buy. They'll also show you the incredible technology and apps you'll both use 
+                           to monitor your fleet – and your success. </p>
+                </mat-expansion-panel>
+        </mat-accordion>
+
+        <div  class="margin-top">
+                <mat-accordion >
+                        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                          <mat-expansion-panel-header>
+                            <mat-panel-title>MANAGEMENT & CONTINUOUS IMPROVEMENT </mat-panel-title>
+                            <mat-panel-description> <p  style="color:  rgb(161, 77, 77)">ALWAYS IMPROVE </p></mat-panel-description>
+                          </mat-expansion-panel-header>
+                          <b>ALWAYS IMPROVE</b>
+                               <p> There's no need to wait and see how your fleet management plan is faring. Your Client 
+                                   Strategy Manager will monitor fleet performance, fuel expenses, industry trends and 
+                                   changing business needs to ensure your total cost of ownership remains low – and your drivers stay happy.</p>
+        
+                                <p>Our team will also handle maintenance – as well as licensing, registration, titles, and help manage
+                                     after-market additions as vehicles are replaced or added. Leave the hassles to us. </p>
+                        </mat-expansion-panel>
+                </mat-accordion>
+        </div>
+
+        <div  class="margin-top">
+                <mat-accordion >
+                        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                          <mat-expansion-panel-header>
+                            <mat-panel-title>REVIEW, REVISE, REPEAT </mat-panel-title>
+                            <mat-panel-description><p  style="color:  rgb(161, 77, 77)">LET’S KEEP THE RESULTS GOING</p> </mat-panel-description>
+                          </mat-expansion-panel-header>
+                          <b>LET’S KEEP THE RESULTS GOING</b>
+                               <p> At your Annual Review, you’ll discuss how your fleet operated in the past year. 
+                                   Your Client Strategy Manager will listen to your needs for the year ahead and 
+                                   provide meaningful fleet recommendations. You’ll also receive a Cost Going Forward
+                                    Analysis outlining anticipated fleet operation costs. You'll leave the meeting confident
+                                     and prepared for the future of your fleet. </p>
+                        </mat-expansion-panel>
+                </mat-accordion>
+        </div>
+    </article>
+
+    <article style="background-color:  rgb(161, 77, 77); height: 150px;" class="margin-top" >
+        <p class="container subscribe" > ASK FLEET MANAGEMENT INSIGHTS FOR MORE </p>
+    </article>
+
+    <article class="margin-top container">
+        <mat-label fxLayoutAlign="center" style="margin-bottom: 10px"><b>MORE FLEET MANAGEMENT SOLUTIONS</b></mat-label>
+                    <div fxLayout="row wrap" fxLayoutGap="16px grid"  >
+                            <div fxFlex="30%" fxFlex.xs="100%" *ngFor="let mat of services" class="fleet">
+                                <mat-card class="card-shadow">
+                                    <mat-card-header>                    
+                                        <mat-card-title class="title">{{mat.title}}</mat-card-title>
+                                    </mat-card-header>
+                                    <img mat-card-image [src]="mat.url">
+                                    <mat-card-content> {{mat.content}} </mat-card-content>
+                                </mat-card>
+                            </div>
+                    </div>                        
+        </article>
+
+
+
+</main>
